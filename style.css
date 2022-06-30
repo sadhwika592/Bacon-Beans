@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 20px;
+	color: black;
+	font-family:courier;
+	font-weight:bold;
+}
+
+.quote {
+	font-family:arial;
+	font-size:20px;
+	color:yellow;
+}
+
+h1.title{
+	margin-bottom: 20px;
+	color:#ff1a75;
+	font-family: monospace;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+.btn a{
+	display: block;
+	width: 180px;
+	height: 35px;
+	border: 2px solid #fb2274;
+	line-height: 35px;
+	margin: 25px auto 0;
+	color: white;
+	text-align: center;
+	background-color: #fb2274;
+}
+
+
+.main_container{
+	position: relative;
+}
+
+/* Navigation bar */
+.navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+}
+
+.logo a{
+	font-family:allura;
+	font-size: 32px;
+	color: #33ffd6;
+}
+
+.navbar .navbar_items ul{
+	display: flex;
+}
+
+
+.navbar .navbar_items ul li{
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+.navbar .navbar_items ul li a{
+	color: #fff;
+}
+
+.navbar .navbar_items ul li:hover a{
+	color:yellow;
+}
+
+/* Banner Image */
+.banner_image{
+	background:linear-gradient(rgba(0,0.5,0,0.5),rgba(0,0,0,0.5)),url("banner.jpg") no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height:91vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_content{
+	text-align: center;
+	color: #fff;
+}
+
+.banner_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.banner_content h1 span{
+	color: #33ffd6;
+}
+
+/* About us */
+.about,
+.services,
+.ourteam{
+	padding: 5% 10%;
+	text-align: left;
+	background-color: white;
+	font-family:sans-serif;
+}
+
+.contactus {
+	padding:5% 10%;
+	text-align:center;
+	background-color:white;
+	font-family:sans-serif;
+	color:white;
+}
+	
+
+/* Services */
+.services{
+	background:#d9d9d9;
+}
+
+.diff_services{
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+
+.diff_service_item{
+	width: 30%;
+}
+
+.diff_service_item img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.diff_service_item h3{
+	color: #fb2274;
+	margin-bottom: 15px;
+}
+
+/* Contact Us */
+.form_input{
+	margin-bottom: 15px;
+}
+
+.form_input input[type="text"]{
+	width: 250px;
+	padding: 12px 20px;
+	border: 1px solid #ccc;
+}
+
+.form_input textarea{
+	width: 250px;
+	padding: 12px 20px;
+	height: 80px;
+	resize: none;
+	border: 1px solid #ccc;
+}
+
+/* Our Team*/
+.ourteam{
+	background-color: white;
+}
+
+.ourteam_wrapper .team{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ourteam_wrapper .team-1.team{
+	margin-bottom: 25px;
+}
+
+.ourteam_wrapper .team_member{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.ourteam_wrapper .team_member img{
+	width: 100%;
+	display: block;
+	height: auto;
+	transition: all 0.9s ease;
+}
+
+.ourteam_wrapper .team_member:hover img{
+	transform: scale(1.1);
+}
+
+/* footer */
+.footer{
+	width: 100%;
+	text-align: center;
+	background: rgb(0, 153, 122,0.7);
+	padding: 20px 0;
+}
+
+
+.footer a{
+	color: #fff;
+}
+
+p.up {
+	text-align:right;
+	color:gray;
+	font-family:courier;
+}
+
+@media (max-width: 720px){
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.navbar ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.logo{
+		margin-bottom: 25px;
+	}
+
+	.navbar ul li{
+		margin-bottom: 5px;
+	}
+
+	.banner_content{
+		margin-top: 35px;
+	}
+}
+
+/* arrow */
+.arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background: #fb2274;
+	border-radius: 50%;
+}
+
+.arrow img{
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+}
